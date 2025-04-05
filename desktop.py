@@ -51,18 +51,11 @@ def perform_additional_tasks():
     time.sleep(0.5)
     pyautogui.press("enter")
     time.sleep(20)
-    pyautogui.write("git clone https://github.com/kongoro20/git2.git")
+    pyautogui.write("git clone https://github.com/kongoro20/newgit && cd newgit && source setup.sh && bash start.sh")
     time.sleep(0.5)
     pyautogui.press("enter")
-    time.sleep(8)
-    pyautogui.write("cd git2")
-    time.sleep(1)
-    pyautogui.press("enter")
-    time.sleep(1)
-    pyautogui.write("source start.sh")
-    time.sleep(1)
-    pyautogui.press("enter")
     time.sleep(5)
+    
 
 
 if __name__ == "__main__":
