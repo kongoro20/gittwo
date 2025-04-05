@@ -12,10 +12,10 @@ sudo apt update
 sudo apt install -y firefox wmctrl xvfb xdotool zip curl jq xclip unzip git python3-dev python3-tk python3-pip gnome-screenshot python3.8-venv supervisor
 
 # Create Python virtual environment
-python3 -m venv /root/git1/myenv
+python3 -m venv /root/gittwo/myenv
 
 # Activate the virtual environment
-source /root/git1/myenv/bin/activate
+source /root/gittwo/myenv/bin/activate
 
 # Ensure .Xauthority file is created
 touch ~/.Xauthority
