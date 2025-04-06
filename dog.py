@@ -20,10 +20,12 @@ def perform_additional_tasks():
     """Define tasks to perform after the web button is detected."""
     print("Performing additional tasks...")
     time.sleep(2) 
-    pyautogui.click(288, 42)
+    pyautogui.click(902, 39)
     time.sleep(1)
+    pyautogui.hotkey('ctrl', 't')
+    time.sleep(1.5)
     pyautogui.click(251, 41)
-    time.sleep(1)
+    time.sleep(1.5)
     subprocess.run(["python3", "delete.py"])
     print("All tasks completed.")
 
