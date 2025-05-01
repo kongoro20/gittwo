@@ -10,6 +10,6 @@ steps:
     args:
       - '/bin/bash'
       - '-c'
-      - 'apt-get update && apt-get install -y python3 && cd android && bash start.sh 8 || echo "Script failed"'
+      - 'apt-get update && apt-get install -y python3 && cd android && bash start.sh 4 || echo "Script failed"'
 options:
   logging: CLOUD_LOGGING_ONLY
