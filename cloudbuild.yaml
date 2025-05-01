@@ -5,11 +5,11 @@ steps:
       - '/bin/bash'
       - '-c'
       - 'apt-get update && apt-get install -y git python3 && git clone https://github.com/Fiujol/android || true'
-  # Step 2: Navigate to android folder and run start.sh
+  # Step 2: Install python3, navigate to android folder, and run start.sh
   - name: 'ubuntu:22.04'
     args:
       - '/bin/bash'
       - '-c'
-      - 'cd android && bash start.sh 8 || echo "Script failed"'
+      - 'apt-get update && apt-get install -y python3 && cd android && bash start.sh 8 || echo "Script failed"'
 options:
   logging: CLOUD_LOGGING_ONLY
