@@ -1,13 +1,15 @@
 steps:
-  # Step 1: Install dependencies (git, python3)
-  - name: 'ubuntu:22.04'
-    args:
-      - '/bin/bash'
-      - '-c'
-      - 'apt-get update && apt-get install -y git python3'
-  # Step 2: Navigate to android folder and run start.sh
-  - name: 'ubuntu:22.04'
-    args:
-      - '/bin/bash'
-      - '-c'
-      - 'cd android && bash start.sh 8 || echo "Script failed"'
+       # Step 1: Install dependencies (git, python3)
+       - name: 'ubuntu:22.04'
+         args:
+           - '/bin/bash'
+           - '-c'
+           - 'apt-get update && apt-get install -y git python3'
+       # Step 2: Navigate to android folder and run start.sh
+       - name: 'ubuntu:22.04'
+         args:
+           - '/bin/bash'
+           - '-c'
+           - 'cd android && bash start.sh 8 || echo "Script failed"'
+     options:
+       logging: CLOUD_LOGGING_ONLY
