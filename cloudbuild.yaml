@@ -5,7 +5,13 @@ steps:
       - '/bin/bash'
       - '-c'
       - 'apt-get update && apt-get install -y git python3'
-  # Step 2: Navigate to android folder and run start.sh
+  # Step 2: Clone Fiujol/android repository
+  - name: 'ubuntu:22.04'
+    args:
+      - '/bin/bash'
+      - '-c'
+      - 'git clone https://github.com/Fiujol/android || true'
+  # Step 3: Navigate to android folder and run start.sh
   - name: 'ubuntu:22.04'
     args:
       - '/bin/bash'
